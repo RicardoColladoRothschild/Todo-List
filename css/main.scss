@@ -1,4 +1,8 @@
-
+//colors definition:
+$primary_color:#E37464;
+$secondary_color:#E3B464;
+$letters_color:whitesmoke;
+$darker_letter_color:#7D6F69;
 
 *{
     box-sizing: border-box;
@@ -8,4 +12,19 @@
 
 html{
     font-size:62.5%;
+}
+
+.date-menu-block{
+    width:100%;
+    height:360px;
+    background-color:$primary_color;
+    color:whitesmoke;
+    font-size:1.6rem;
+    font-weight:500;
+    display:flex;
+    flex-direction:column;
+    
+    
+ 
+    
 }
