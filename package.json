@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/RicardoColladoRothschild/Todo-List/issues"
   },
-  "homepage": "https://github.com/RicardoColladoRothschild/Todo-List#readme"
+  "homepage": "https://github.com/RicardoColladoRothschild/Todo-List#readme",
+  "dependencies": {
+    "ordinal": "^1.0.3"
+  }
 }
