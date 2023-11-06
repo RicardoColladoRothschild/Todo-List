@@ -9,6 +9,7 @@ html {
 }
 
 .date-menu-block {
+  position: absolute;
   width: 100%;
   height: 360px;
   padding: 16px;
@@ -55,4 +56,25 @@ html {
   border-radius: 75px;
   margin-bottom: 25px;
   box-shadow: 16px 16px 12px rgba(0, 0, 0, 0.5);
+}
+
+.add-new-note--circule {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  background-color: #E3B464;
+  color: whitesmoke;
+  font-weight: bold;
+  padding: 2px;
+  text-align: center;
+  left: 275px;
+  top: 335px;
+  position: relative;
+  font-size: 3.5rem;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.add-new-note--circule:hover {
+  background-color: #7D6F69;
+  cursor: pointer;
+  box-shadow: none;
 }
