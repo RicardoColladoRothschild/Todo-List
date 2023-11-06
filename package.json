@@ -1,0 +1,24 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "Todo list web app, it save information in local storage, so it will be available on the browser that you used.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RicardoColladoRothschild/Todo-List.git"
+  },
+  "keywords": [
+    "TodoList",
+    "webapp",
+    "localstorage"
+  ],
+  "author": "Ricardo Vladimir Collado Rothschild",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RicardoColladoRothschild/Todo-List/issues"
+  },
+  "homepage": "https://github.com/RicardoColladoRothschild/Todo-List#readme"
+}
