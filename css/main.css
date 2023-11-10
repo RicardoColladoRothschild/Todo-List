@@ -8,6 +8,28 @@ html {
   font-size: 62.5%;
 }
 
+.main-container .mobile-menu {
+  position: absolute;
+  top: 60px;
+  padding: 24px;
+  background-color: #E3B464;
+  left: 0;
+  width: 100%;
+}
+.main-container .mobile-menu a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bold;
+}
+.main-container .mobile-menu ul {
+  padding: 0;
+  margin: 24px 0 0;
+  list-style: none;
+}
+.main-container .mobile-menu ul li {
+  margin-bottom: 24px;
+}
+
 .date-menu-block {
   position: absolute;
   width: 100%;
@@ -77,4 +99,8 @@ html {
   background-color: #7D6F69;
   cursor: pointer;
   box-shadow: none;
+}
+
+.inactive {
+  display: none;
 }
