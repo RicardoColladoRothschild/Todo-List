@@ -1,4 +1,3 @@
-
 const menu_icon_btn = document.querySelector('.menu-mobile-lines');
 const menu_mobile_view = document.querySelector('.mobile-menu');
 const time_information_container = document.querySelector('.time-information--container');
@@ -10,6 +9,7 @@ function toggleMenu(){
     console.log('bottom pressed');
     
     todayDateParagraph.classList.toggle('inactive');
+    
 }
 
 menu_icon_btn.addEventListener('click',toggleMenu);
