@@ -1,4 +1,4 @@
-import toggleMobileMenu from './DisappearAnimations';
+import { toggleMobileMenu } from './DisappearAnimations.js';
 const menu_icon_btn = document.querySelector('.menu-mobile-lines');
 
 const time_information_container = document.querySelector('.time-information--container');
