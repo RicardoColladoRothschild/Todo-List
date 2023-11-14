@@ -97,7 +97,11 @@ html{
                         }
 
                         .new-task-button--container{
-                            
+                            width:100%;
+                            display:flex;
+                            flex-direction:flex-end;
+                            align-items: end;
+                            background-color: blue;
                         }
             
             }
