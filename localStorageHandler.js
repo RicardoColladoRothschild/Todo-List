@@ -8,15 +8,22 @@ function isEmpty(){
     return false;
 }
 function saveToLocalStorage(data){
-    localStorage.setItem('Pendint-Task', data);
+    console.log('Sending to local storage....');
+    localStorage.setItem('Pending-Task', data);
 }
 
-function createTask(task){
+function createTask(recievedTask){
     const taskIdentifierbyDate = new Date();
-    let taskPending = {
+    const taskPending = {
         task_id:taskIdentifierbyDate,
-        task:task
+        task:recievedTask
     }
-
-    saveToLocalStorage();
+    console.log('Adding new task object to the array');
+    task.push(taskPending);
+    console.table(taskPending);
+    console.log('saving to local storage, method call...');
+    saveToLocalStorage(task);
 }
+
+
+export { createTask };
