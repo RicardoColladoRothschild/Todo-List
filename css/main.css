@@ -8,6 +8,10 @@ html {
   font-size: 62.5%;
 }
 
+.inactive {
+  display: none;
+}
+
 .main-container {
   width: 100%;
   height: auto;
@@ -98,6 +102,9 @@ html {
   font-weight: 500;
   background-color: #E37464;
 }
+.main-container .task-container .inactive {
+  display: none;
+}
 
 .date-menu-block {
   position: relative;
@@ -168,8 +175,4 @@ html {
   background-color: #7D6F69;
   cursor: pointer;
   box-shadow: none;
-}
-
-.inactive {
-  display: none;
 }
