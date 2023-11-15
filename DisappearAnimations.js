@@ -11,6 +11,10 @@ function toggleMobileMenu(){
         }else{
             todayDateParagraph.classList.remove('inactive');
         }
+
+        if(!newTaskContainer.classList.contains('inactive')){
+            newTaskContainer.classList.add('inactive');
+        }
     
 }
 
