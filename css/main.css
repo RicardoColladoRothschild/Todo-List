@@ -57,9 +57,9 @@ html {
   width: 100%;
   height: 85vh;
   display: flex;
-  justify-content: center;
+  align-items: center;
   padding-top: 25px;
-  flex-direction: row;
+  flex-direction: column;
   background-color: white;
 }
 .main-container .task-container .new-task-container {
@@ -127,8 +127,19 @@ html {
   font-size: 1.4rem;
   font-weight: 600;
 }
-.main-container .task-container .task-pending .task-done--checkbox {
-  width: 25px;
+.main-container .task-container .task-pending .task-pending-checkbox-container {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: end;
+}
+.main-container .task-container .task-pending .task-pending-checkbox-container label {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #7D6F69;
+}
+.main-container .task-container .task-pending .task-pending-checkbox-container .task-done--checkbox {
+  width: 45px;
 }
 .main-container .task-container .inactive {
   display: none;
