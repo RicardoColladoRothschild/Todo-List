@@ -105,7 +105,7 @@ html {
 .main-container .task-container .task-pending {
   margin-top: 35px;
   width: 325px;
-  height: 135px;
+  height: 145px;
   border: 1px solid black;
   border-radius: 8px;
   background-color: wheat;
@@ -113,6 +113,22 @@ html {
   flex-direction: column;
   padding: 20px;
   box-shadow: 12px 18px 10px rgba(35, 35, 35, 0.75);
+}
+.main-container .task-container .task-pending .task-pending-text {
+  width: 265px;
+  height: 91px;
+  padding: 6px;
+  background-color: whitesmoke;
+  font-size: 1.6rem;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.main-container .task-container .task-pending .task-pending--date {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.main-container .task-container .task-pending .task-done--checkbox {
+  width: 25px;
 }
 .main-container .task-container .inactive {
   display: none;
