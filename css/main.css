@@ -59,6 +59,7 @@ html {
   background-color: white;
 }
 .main-container .task-container .new-task-container {
+  margin-top: 18px;
   width: 300px;
   height: 125px;
   display: flex;
@@ -76,7 +77,7 @@ html {
   border-bottom: solid 0.2px black;
 }
 .main-container .task-container .new-task-container input {
-  width: 195px;
+  width: 220px;
   height: 31px;
   padding: 4px;
   outline: none;
@@ -87,7 +88,15 @@ html {
   display: flex;
   flex-direction: flex-end;
   align-items: end;
-  background-color: blue;
+  justify-content: end;
+}
+.main-container .task-container .new-task-container .new-task-button--container .new-task-container--button {
+  width: 75px;
+  height: 35px;
+  border: 1px solid #E3B464;
+  border-radius: 8px;
+  font-weight: 500;
+  background-color: #E37464;
 }
 
 .date-menu-block {
