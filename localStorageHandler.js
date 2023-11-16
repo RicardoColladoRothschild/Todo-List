@@ -9,15 +9,12 @@ function isEmpty(){
 }
 function saveToLocalStorage(data){
     console.log('Sending to local storage....');
-    localStorage.setItem('Pending-Task', data);
+    localStorage.setItem('data', data);
 }
 
 function createTask(recievedTask){
     const taskIdentifierbyDate = new Date();
-    const taskPending = {
-        task_id:taskIdentifierbyDate,
-        task:recievedTask
-    }
+    const taskPending = recievedTask;
     console.log('Adding new task object to the array');
     task.push(taskPending);
     console.table(taskPending);
