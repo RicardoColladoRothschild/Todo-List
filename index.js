@@ -6,6 +6,17 @@ const time_information_container = document.querySelector('.time-information--co
 
 const btn_createTask = document.querySelector('#btn_new_Task');
 
+function onloadPage(){
+
+}
+
+function createTaskBoxView(){
+    const currentTask = retrieveAllTask();
+    console.log(currentTask);
+}
+
+createTaskBoxView();
+
 //Mobile Menu options
 const allTaskList = document.querySelector('#currentListTask');
 
