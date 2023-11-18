@@ -1,5 +1,14 @@
 
 let task = [];
+
+function getAllTask(){
+    return task;
+}
+
+function addToTask(tarea){
+    task.push(task)
+}
+
 function isEmpty(){
     
     if((Object.keys(localStorage).length) == 0){
@@ -7,20 +16,33 @@ function isEmpty(){
     }
     return false;
 }
+
 function saveToLocalStorage(data){
     console.log('Sending to local storage....');
-    localStorage.setItem('data', data);
+    localStorage.setItem('Task', JSON.stringify(data));
+}
+
+function retrieveAllTask(){
+    console.log('Calling retrieveAllTask...');
+    const all_Task = JSON.parse(localStorage.getItem('Task'));
+    //task = all_Task;
+        all_Task.forEach((t)=>{
+            console.log(t);
+        });
 }
 
 function createTask(recievedTask){
-    const taskIdentifierbyDate = new Date();
-    const taskPending = recievedTask;
-    console.log('Adding new task object to the array');
-    task.push(taskPending);
-    console.table(taskPending);
-    console.log('saving to local storage, method call...');
+    
+    
+    //Adding new task object to the array
+    //addToTask(recievedTask);  
+    console.log('Enviando task al array');
+    task.push(recievedTask);
+    //saving to local storage, method call..
+    console.log('Enviando array con task a que se guarde en el local storage');
     saveToLocalStorage(task);
 }
 
 
-export { createTask };
+export { addToTask, createTask, getAllTask, retrieveAllTask };
+
